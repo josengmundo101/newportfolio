@@ -526,6 +526,15 @@ section,
   display: inline-block;
 }
 
+.section-title h5:before,
+.section-title h5:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: var(--accent-color);
+  display: inline-block;
+}
+
 .section-title h2:before {
   margin: 0 15px 10px 0;
 }
@@ -1179,7 +1188,7 @@ section,
   flex-wrap: wrap;
 }
 
-.about .cta-section .btn {
+.cta-section .btn {
   padding: 0.875rem 2rem;
   border-radius: 0.75rem;
   font-weight: 600;
@@ -1191,25 +1200,25 @@ section,
   border: 2px solid transparent;
 }
 
-.about .cta-section .btn.btn-primary {
+.cta-section .btn.btn-primary {
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.about .cta-section .btn.btn-primary:hover {
+.cta-section .btn.btn-primary:hover {
   background-color: color-mix(in srgb, var(--accent-color), black 15%);
   transform: translateY(-2px);
   box-shadow: 0 10px 30px
     color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
-.about .cta-section .btn.btn-outline {
+.cta-section .btn.btn-outline {
   background-color: transparent;
   color: var(--default-color);
   border-color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.about .cta-section .btn.btn-outline:hover {
+.cta-section .btn.btn-outline:hover {
   border-color: var(--accent-color);
   transform: translateY(-2px);
 }
